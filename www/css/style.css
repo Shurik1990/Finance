@@ -13,10 +13,19 @@
 /* Media
 /* ------------------------------------------------------------------------ */
 @media (max-width: 460px) { 
-    .call { margin: 0 !important; text-align: center !important; font-size: 12px;}
+    .call { margin: 0 !important; font-size: 12px;}
     .call a{border: none !important;}
     #top-bar .social-icons ul {text-align: center; width:100%; font-size: 0; margin: 0 !important; padding: 0 !important;}
-    .logo a {text-align: center !important; }}
+    .logo a {text-align: center !important; }
+    .about-us li a {vertical-align: middle; padding: 0 !important; font-size: 9px !important; margin: 0 !important;}
+    .textwidget {font-size: 12px !important; padding: 0px !important;}
+    .logo-1 {width: 100% !important; font-size: 8px; padding-top: 15px;}
+}
+@media (min-width: 460px) and (max-width: 601px) { 
+    .about-us li a {vertical-align: middle; padding: 0 !important; font-size: 11px !important; text-align: center !important;}
+    .about-us li {margin-right: 0px !important;}
+    .logo-1 {width: 100% !important; font-size: 12px; padding-top: 15px;}
+}
 @media screen and (max-width: 800px) and (min-width: 601px) {
     .request-bar .left-block {width:50%; display:block; text-align: center !important; vertical-align: middle !important;}
     .request-bar .right-block {width:50%; display:block; text-align: center !important; vertical-align: middle !important; margin: 0;}
@@ -32,8 +41,8 @@
     #top-bar ul.dropdown {text-align: center; width: 100%; padding:0px 0px !important; margin:0px 0 0 0 !important;}
     #top-bar ul.dropdown-inside {text-align: center; width: 100%; padding:0px 0px !important; margin:0px 0 0 0 !important;}
     section h1 {font-size: 17px;}
-    .logo a {text-align: center !important; }}
-   }
+    .logo a {text-align: center !important; }
+}
 @media (min-width: 768px) {
     #top-bar .call {width:100%; padding:0px 0px; text-align: center; margin:0px 0 0 0 !important;}
      #top-bar ul.dropdown {text-align: center; width: 70%; padding:0px 0px !important; margin:0px 0 0 0 !important;}
@@ -46,20 +55,23 @@
     #top-bar ul.dropdown-inside {text-align: left; width: 130%; padding:0px 0px !important; margin:0px 0 0 0 !important;}
 }
 @media (max-width: 991px) {
-    .about-us li {width: 25% !important; text-align: center;}
-    .logo-1 {width: 100% !important; text-align: center; padding:0; margin:0;}
-   .box .one-three { width: 100% !important; padding:0; margin:0;}
+    .about-us li a {vertical-align: middle; padding: 0 !important; font-size: 12px !important; text-align: center !important;}
+    .logo-1 {width: 100% !important; font-size: 12px; text-align: center; padding-top: 15px; margin: 0;}
+    .textwidget {font-size: 12px !important; padding-top: 0px !important;}
+   .box .one-three {width: 100% !important; padding:0; margin:0;}
     h2 {padding:0 !important; text-align: center !important;}
-    .one-question h3 {padding:0 !important; text-align: center !important;}
+    .one-question h3 {padding:0 !important; text-align: left !important;}
     .one-question p {padding:0 !important; text-align: left !important;}
     .one-question {margin:0 !important;}
     .news {margin:0 !important;}
+    .request-bar {margin: 0 !important;}
+    .request-bar .block-title {font-size: 10px; padding: 3px !important; vertical-align: middle;}
     .request-bar .separator {display:none;}
     .request-bar .left {display:none;}
     .request-bar .right {display:none;}
 }
 @media (max-width: 1199px) {
-    .nav{display: none}
+    .nav {display: none}
     .logo a {text-align: center !important; }}
 } 
 @media screen and (max-width: 1230px) and (min-width: 960px) {
@@ -413,7 +425,6 @@ main .last {
     text-align: left;
     padding-top: 10px;
     padding-bottom: 20px;
-    width: 500px;
 }
 .news h3 {
     font: 14px 'Roboto', sans-serif;
@@ -475,13 +486,13 @@ main .last {
 /* Footer */
 /* ------------------------------------------------------------------------ */
 #footer {
-margin-top: 25px;
-border: 0;
-background: #322d30;
-padding: 5px 0;
-color: #b2adad;
+    margin-top: 25px;
+    border: 0;
+    background: #322d30;
+    padding: 5px 0;
+    color: #b2adad;
 }
-about-us ul {
+.about-us ul {
     margin-top: 10px;
     margin-left: 0;
     margin-right: 10px;
